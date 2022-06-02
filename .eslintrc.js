@@ -1,3 +1,5 @@
+// eslint-disable-file no-use-before-define
+
 const a11yOff = Object.keys(require('eslint-plugin-jsx-a11y').rules).reduce((acc, rule) => {
   acc[`jsx-a11y/${rule}`] = 'off';
   return acc;
@@ -77,9 +79,8 @@ module.exports = {
         message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
-    'max-len': [
-      'warn'
-    ],
+    'max-len': ['warn'],
+    'no-unused-vars': 'warn',
     'no-void': 'off',
     'linebreak-style': ['error', 'windows'],
     'class-methods-use-this': 'off',
@@ -98,6 +99,7 @@ module.exports = {
     ],
     'template-curly-spacing': 'off',
     'react/jsx-no-undef': 'off',
+    'react/no-array-index-key': 'off',
     'react/no-did-update-set-state': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/destructuring-assignment': 'off',

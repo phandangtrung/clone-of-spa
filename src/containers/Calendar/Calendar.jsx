@@ -1,12 +1,8 @@
-import React from 'react';
-// import FullCalendar from '@fullcalendar/react';
-// import timeGridPlugin from '@fullcalendar/timegrid';
+import CalendarTimeGrid from '~/components/CalendarTimeGrid';
 
 const CalendarContainer = () => {
   return (
-    <div className="relative w-full h-full">
-      {/* <FullCalendar initialView="timeGridWeek" plugins={[timeGridPlugin]} /> */}
-    </div>
+    <CalendarTimeGrid />
   );
 };
 

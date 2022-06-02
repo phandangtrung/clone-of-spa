@@ -5,7 +5,7 @@ import CustomerIcon from '~/assets/icons/customer.svg';
 import DepositIcon from '~/assets/icons/deposit.svg';
 import SettingsIcon from '~/assets/icons/setting.svg';
 
-export default function SideBar() {
+function SideBar() {
   const { t } = useTranslation();
   return (
     <div id="sideBar" className="fixed pos-sidebar overflow-x-hidden text-gray-700 bg-white border-r pos-border-color z-999">
@@ -41,3 +41,5 @@ export default function SideBar() {
     </div>
   );
 }
+
+export default SideBar;

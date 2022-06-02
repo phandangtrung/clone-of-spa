@@ -49,7 +49,7 @@ export default defineConfig({
   shortcuts: {
     'pos-header': 'relative h-[60px] w-full',
     'pos-sidebar': 'relative left-0 top-[60px] h-[calc(100%-60px)] w-[80px]',
-    'pos-main': 'relative left-[80px] top-[60px] w-[calc(100%-80px)] py-8',
+    'pos-main': 'relative left-[80px] top-[60px] h-full w-[calc(100%-80px)] py-8',
     'pos-border-color': 'border-color-[#ECEEF1]',
     'pos-overlay': 'fixed h-full w-full bg-dark-200 opacity-40 z-20'
   }

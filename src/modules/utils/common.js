@@ -3,6 +3,13 @@
  * Example: "hello world" => "hello-world"
  * @param id
  */
+import { twMerge } from 'tailwind-merge';
+import clsx from 'clsx';
+
 export const convertToElId = (id) => id.replace(/[^\dA-Za-z]/g, '-').toLowerCase();
 
-export default {};
+const classNames = (...agr) => twMerge(clsx(...agr));
+
+export default {
+  classNames,
+};

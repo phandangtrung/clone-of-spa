@@ -3,6 +3,10 @@ body,
 #root {
 	@apply content-center;
 	height: 100%;
+  width: 100%;
+  font-family: "SF-Pro-Display";
+  font-weight: 400;
+  color: #35353F;
 }
 
 :root {
@@ -29,7 +33,7 @@ html.dark {
 
 body {
 	color: black;
-	background: #F8FAFC;
+	background: #ffffff;
 	height: 100%;
 }
 

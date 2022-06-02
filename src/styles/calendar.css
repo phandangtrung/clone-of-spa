@@ -1,0 +1,190 @@
+.fc {
+  --fc-border-color: #eceef1 !important;
+}
+
+.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+/*-------------------------------------------------------style header-------------------------------------------------------*/
+.fc .fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary[title] {
+  /* display: none; */
+}
+
+.fc .fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary:hover,
+.fc .fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary:active,
+.fc .fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary:focus {
+  box-shadow: none;
+}
+
+.fc .fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary:active {
+  background-color: #e1e7ec;
+  color: #35353f;
+  border-color: #e1e7ec;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+  font-size: 18px;
+  color: #1b74e8;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary.fc-today-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #35353f;
+  background-color: white;
+  border: 1px solid #cfd6de;
+  opacity: 1;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary.fc-prev-button,
+.fc-header-toolbar .fc-toolbar-chunk .fc-button.fc-button-primary.fc-next-button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  padding: 0;
+  margin: 0px 6px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button {
+  padding: 0;
+  margin: 0 !important;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1b74e8;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button:focus,
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button:active,
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button:hover {
+  background-color: transparent !important;
+  border: none !important;
+  color: #1b74e8 !important;
+  box-shadow: none !important;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button .fc-datePickerContent {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-datePickerButton-button .fc-datePickerContent {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-zoomSettingButton-button {
+  padding: 0;
+  margin: 0 !important;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1b74e8;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-zoomSettingButton-button:focus,
+.fc-header-toolbar .fc-toolbar-chunk .fc-zoomSettingButton-button:active,
+.fc-header-toolbar .fc-toolbar-chunk .fc-zoomSettingButton-button:hover {
+  background-color: transparent !important;
+  border: none !important;
+  color: #1b74e8 !important;
+  box-shadow: none !important;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-button.fc-button-primary {
+  color: #35353f;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #eceef1;
+  font-weight: 400;
+  width: 80px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-button.fc-button-primary.fc-button-active {
+  color: white;
+  background: #1b74e8;
+  border: none;
+  box-shadow: none;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk .fc-icon {
+  color: #35353f;
+}
+
+/*-------------------------------------------------------style row header-------------------------------------------------------*/
+.fc .fc-col-header-cell-cushion {
+  padding: 4px 2px 2px !important;
+}
+
+.fc-col-header-cell-cushion .calendar-header p:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.fc-col-header-cell-cushion .calendar-header p {
+  text-align: center;
+  vertical-align: middle;
+  color: #8995a6;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.fc-timegrid table thead .fc-col-header-cell.fc-day.fc-day-today {
+  color: #1b74e8;
+  background: #f3f8ff;
+}
+.fc .fc-timegrid-slot-label {
+  border: none;
+}
+.fc-daygrid-day-top .fc-daygrid-day-number {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-weight: 400;
+}
+/*-------------------------------------------------------style slot label-------------------------------------------------------*/
+
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #8995a6;
+}
+
+.fc .fc-timegrid-slot-label.fc-timegrid-slot-minor {
+  border: none;
+  border-top-style: none;
+}
+
+/* hidden style slot 15m */
+.fc .fc-timegrid-slot-minor {
+  border-top-style: hidden !important;
+}
+
+/*-------------------------------------------------------style cols-------------------------------------------------------*/
+
+.fc .fc-timegrid-cols .fc-timegrid-col.fc-day.fc-day-today {
+  /* color: #1B74E8;
+  background: #f3f8ff; */
+  background-color: white;
+}
+/*-------------------------------------------------------Calendar DatePicker-------------------------------------------------------*/
+#calendar-dp {
+  top: 16px !important;
+  left: -60px !important;
+}

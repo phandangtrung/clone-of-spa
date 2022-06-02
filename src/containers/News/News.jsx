@@ -21,7 +21,7 @@ export default function News({ value }) {
               <img
                 className={clsx(
                   'relative overflow-hidden min-h-[160px]',
-                  newsItem?.image?.thumbnail?.contentUrl && 'rounded-t max-h-[160px] w-full z-1 bg-auto'
+                  newsItem?.image?.thumbnail?.contentUrl && 'rounded-t max-h-[160px] w-full z-1 bg-auto',
                 )}
                 src={newsItem.image.thumbnail.contentUrl}
                 alt=""

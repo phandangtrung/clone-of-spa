@@ -1,12 +1,18 @@
-import clsx from 'clsx';
+import { forwardRef  } from 'react';
+import CommonUtils from '~/modules/utils/common';
 
-const style = 'rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 '
-	+ 'block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent '
-	+ 'dark:focus:text-white dark:hover:text-white dark:text-gray-200 hover:text-gray-900'
-	+ 'focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline';
+const style = 'rounded border border-[#cfd6de]'
+  + 'block px-4 py-1.5 text-base text-[#35353f] bg-transparent '
+  + 'hover:(text-gray-900 bg-gray-200)'
+  + ' ';
 
-export default function Button(properties) {
-  const { children, className } = properties;
+const Button = forwardRef((properties, ref) => {
+  const { children, className, ...rest } = properties;
+  return (
+    <button ref={ref} {...rest} className={CommonUtils.classNames(style, className)} type="button">
+      {children}
+    </button>
+  );
+});
 
-  return <button {...properties} className={style + clsx(className)} type="button">{children}</button>;
-}
+export default Button;

@@ -1,0 +1,72 @@
+
+.pos-single-datepicker .rdp-months .rdp-caption {
+  position: relative;
+  padding: 1em 1rem 0.5rem 1rem;
+}
+.pos-single-datepicker .rdp-months .rdp-table .rdp-head {
+  border-top: 1px solid #ECEEF1;
+}
+
+.pos-single-datepicker .rdp-months .rdp-table .rdp-tfoot {
+  border-top: 1px solid #ECEEF1;
+}
+
+.pos-single-datepicker .rdp-months .rdp-caption h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pos-single-datepicker .rdp-months .rdp-caption .rdp-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pos-single-datepicker .rdp-months .rdp-tfoot {
+  position: relative;
+}
+
+.pos-single-datepicker .rdp-button_reset.rdp-button:active,
+.pos-single-datepicker .rdp-button_reset.rdp-button:hover {
+  border: none;
+}
+.pos-single-datepicker .rdp-button_reset.rdp-button.rdp-day {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.pos-single-datepicker .rdp-button_reset.rdp-button.rdp-day.rdp-day_selected {
+  background-color: #1b74e8;
+  border: none;
+}
+
+.pos-single-datepicker .rdp-button_reset.rdp-button.rdp-day.rdp-day_outside {
+  background-color:  transparent;
+  border: none;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pos-single-datepicker .rdp-tfoot tr td {
+  padding: 0;
+  margin: 0;
+}
+.pos-single-datepicker .rdp-tfoot .dp-footer button{
+  color: #1b74e8;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 282px;
+}
+
+.pos-single-datepicker .rdp-tfoot .dp-footer button:disabled{
+  background-color: #E1E7EC;
+  color: #fff;
+  cursor: default;
+}
+
